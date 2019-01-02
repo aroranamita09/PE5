@@ -16,6 +16,6 @@ public class MainTest
 
     public Student getS1() {
         return s1;
-    }list.add();
+    };
 
 }
