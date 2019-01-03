@@ -8,37 +8,37 @@ public class Student {
      e. Sort the list based on their age in decreasing order, for student having same
      age, sort based on their name.
      f. For students having same name and age, sort them according to their ID.**/
-    private Integer id;
+    private int id;
     private String name;
-    private Integer age;
-    public Student(int id, String name,
-                   int age)
+    private int age;
+    public Student (int id,String name,int age)
     {
-        this.age = age;
-        this.name = name;
-        this.id = id;
+        this.id=id;
+        this.age=age;
+        this.name=name;
     }
-    public Integer getAge(Integer Age)
+
+    public void setStudentDetails(int id,String name,int age)
+    {
+        this.id=id;
+        this.name=name;
+        this.age=age;
+    }
+    public Integer getAge()
     {
         return age;
     }
-    public void setAge(Integer age){
-        this.age=age;
-    }
-    public String getName(String name)
+
+    public String getName()
     {
         return name;
     }
-    public void setName(String name){
-        this.name=name;
-    }
-    public Integer getId(Integer id)
+
+    public Integer getId()
     {
         return id;
     }
-    public void setId(Integer id){
-        this.id=id;
-    }
+
     public String toString()
     {
         return this.id+ " " + this.name +

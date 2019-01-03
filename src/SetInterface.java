@@ -7,7 +7,7 @@ public class SetInterface {
     Output :
     Sorted Set : Alice Bluto Eugene Harry Olive
     Array list from Set : Alice Bluto Eugene Harry Olive**/
-    public List setInterface(Set names)
+  /**  public List setInterface(Set names)
     {
         Set<String> tree_Set = new TreeSet<String>(names);
         System.out.println(tree_Set);
@@ -15,7 +15,7 @@ public class SetInterface {
         list.add(tree_Set);
         return list;
     }
-}
+}**/
     public Set<String> sortedSet(Set<String> set) {
         List<String> list = new ArrayList<String>();
         list.addAll(set);
@@ -34,3 +34,4 @@ public class SetInterface {
         Set<String> newSet=new LinkedHashSet<String>(list);
         return newSet;
     }
+}

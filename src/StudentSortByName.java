@@ -7,6 +7,6 @@ class StudentSortByName implements Comparator<Student>
     // roll name
     public int compare(Student a, Student b)
     {
-        return a.name.compareTo(b.name);
+        return a.getName().compareTo(b.getName());
     }
 }

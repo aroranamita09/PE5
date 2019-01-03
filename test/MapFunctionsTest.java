@@ -1,7 +1,9 @@
 import org.junit.Test;
 
 import java.util.HashMap;
+import java.util.Map;
 
+import static javax.swing.UIManager.put;
 import static org.junit.Assert.*;
 
 public class MapFunctionsTest {
@@ -9,9 +11,15 @@ public class MapFunctionsTest {
     public void testMapFunctions() throws Exception
     {
         MapFunctions obj=new MapFunctions();
-        HashMap<String,String> hmap=new HashMap<String,String> ();
-        hmap.put("java","c++");
-        assertEquals("  +java",obj.fun(hmap));
+        Map<String, String> hmap=new HashMap<>();
+        hmap.put("val1","java");
+        hmap.put("val2","c++");
+       // Map<String, String> expectedMap=new HashMap<>();
+       // expectedMap.put("val1", " ");
+        //expectedMap.put("val2", "java");
+        Map<String, String> resultingMap=obj.fun(hmap);
+
+        assertTrue(hmap.equals(resultingMap));
     }
 
 }

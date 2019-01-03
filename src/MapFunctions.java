@@ -18,10 +18,13 @@ public class MapFunctions {
      "val2": "saturn"}
      should return {"val1": " ", "val2":
      **/
-    public HashMap fun(HashMap hmap)
+    public Map<String,String> fun(Map<String,String> hmap)
     {
-      hmap.replace("java","");
+      if(!hmap.get("val1").equals(""))
+      {
+          hmap.replace("val2","val1");
+          hmap.replace("val1","");
 
-        return hmap;
+    } return hmap;
     }
 }
